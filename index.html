@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
 
@@ -21,25 +21,37 @@
     <nav>
       <div class="logo-container">
         <div class="logo">
-          <img src="brand-tsd.webp" alt="logo" />
+          <a>
+            <img src="brand-tsd.webp" alt="logo" />
+          </a>
         </div>
       </div>
       <div class="notification">
+        <div class="one-notification">1</div>
         <div class="bell-container">
-          <i class="fa-regular fa-bell"></i>
+          <a>
+            <i class="fa-regular fa-bell"></i>
+          </a>
         </div>
       </div>
       <div class="links-container">
-        <ul>
+        <ul class="navigation-ul">
           <li><a>THE FILM</a></li>
           <li><a>THE DILEMMA</a></li>
           <li><a>THE TOUR</a></li>
           <li><a>TAKE ACTION</a></li>
           <li>
-            <a><i class="fa-solid fa-bars"></i></a>
+            <a><i class="fa-solid fa-bars hamburger"></i></a>
           </li>
+        </ul>
+        <ul class="hamburger-ul hide">
+          <li><a href="">HOST A SCREENING</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">DONATE</a></li>
+          <li><a href="">PRESS</a></li>
         </ul>
       </div>
     </nav>
+    <script src="script.js"></script>
   </body>
 </html>
