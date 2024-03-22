@@ -207,7 +207,16 @@ a:hover {
 }
 
 .hide {
-  display: none;
+  display: none !important;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 41px;
+  left: -131px;
+  z-index: 20;
 }
 
 .notification-menu {
@@ -228,6 +237,17 @@ a:hover {
 .notification-heading h3 {
   font-size: 14.5px;
   font-weight: 300;
+  line-height: 1.5;
+}
+
+input:focus-visible {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
+}
+
+select:focus-visible {
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.6) !important;
 }
 
 #email,
@@ -284,4 +304,45 @@ a:hover {
   justify-content: space-between;
   gap: 10px;
   text-wrap: wrap;
+}
+
+.notification-trap {
+  background-color: #efefef;
+  width: 296px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.trap-info {
+  display: flex;
+  flex-direction: row;
+}
+.notification-trap .trap-info .cross {
+  background-color: #e23b38;
+  color: white !important;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  width: 9.74px;
+  height: 17.5px;
+  margin-right: 6.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trap-info h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #e23b38;
+}
+
+.trap-wrapper p {
+  color: black;
+  font-family: "Arimo", sans-serif;
+  font-weight: 200;
+  font-size: 12.65px;
 }
