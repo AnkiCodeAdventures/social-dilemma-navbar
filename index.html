@@ -14,7 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
     <title>The social dilemma</title>
   </head>
   <body>
@@ -26,32 +31,70 @@
           </a>
         </div>
       </div>
-      <div class="notification">
-        <div class="one-notification">1</div>
-        <div class="bell-container">
-          <a>
+      <a>
+        <div class="notification">
+          <div class="one-notification">1</div>
+          <div class="bell-container">
             <i class="fa-regular fa-bell"></i>
-          </a>
+          </div>
         </div>
-      </div>
+      </a>
       <div class="links-container">
         <ul class="navigation-ul">
           <li><a>THE FILM</a></li>
           <li><a>THE DILEMMA</a></li>
           <li><a>THE TOUR</a></li>
           <li><a>TAKE ACTION</a></li>
-          <li>
-            <a><i class="fa-solid fa-bars hamburger"></i></a>
+          <li class="hamburger">
+            <button class="hamburger-icon">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="hamburger-ul hide">
+              <li><a href="">HOST A SCREENING</a></li>
+              <li><a href="">CONTACT</a></li>
+              <li><a href="">DONATE</a></li>
+              <li><a href="">PRESS</a></li>
+            </ul>
           </li>
-        </ul>
-        <ul class="hamburger-ul hide">
-          <li><a href="">HOST A SCREENING</a></li>
-          <li><a href="">CONTACT</a></li>
-          <li><a href="">DONATE</a></li>
-          <li><a href="">PRESS</a></li>
         </ul>
       </div>
     </nav>
+    <aside>
+      <div class="notification-menu">
+        <div class="text-wrapper">
+          <div class="notification-heading">
+            <h3>
+              Take back control with a 7-day Social Media Reboot. Get tips from
+              experts in the film.
+            </h3>
+          </div>
+          <div class="form-wrapper">
+            <input type="email" id="email" placeholder="EMAIL" />
+            <select id="user">
+              <option value="" disabled selected>I AM...?</option>
+              <option value="user">A concerned user</option>
+              <option value="parent">A parent</option>
+              <option value="educator">An educator</option>
+              <option value="tech-worker">A tech worker</option>
+            </select>
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                id="agreement"
+                value="selected"
+                name="agreement"
+              />
+              <label for="agreement" class="agreement">
+                I’d like to get information for my Social Media Reboot and
+                occasional updates on The Social Dilemma and other Exposure Labs
+                productions.
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="button">SIGN UP</button>
+      </div>
+    </aside>
     <script src="script.js"></script>
   </body>
 </html>

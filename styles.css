@@ -13,11 +13,6 @@ html {
   padding: 0;
 }
 
-a {
-  padding: 1em;
-  margin: -1em;
-}
-
 /* navigation bar styles */
 
 nav {
@@ -118,8 +113,6 @@ img {
 
 .links-container {
   flex: 1;
-  position: relative;
-  z-index: 5;
 }
 
 .navigation-ul {
@@ -160,23 +153,35 @@ a:hover {
   z-index: 10;
 }
 
+/* hamburger button styles */
+.hamburger {
+  position: relative;
+  z-index: 5;
+}
+.hamburger-icon {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
 .hamburger-ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   background-color: #292929;
-  color: #d8d9db;
   font-family: "Oswald", sans-serif;
   font-weight: 200;
   font-size: 15px;
   font-style: normal;
   width: 160px;
   height: 161.5px;
-  text-align: right;
   position: absolute;
   z-index: 10;
-  top: 36px;
-  left: 391px;
+  top: 35px;
+  left: -135px;
   border: 2px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -185,11 +190,17 @@ a:hover {
   text-decoration: none;
   flex: 1;
   padding-right: 10px;
+  text-align: right;
 }
 
-a {
-  color: inherit;
+.hamburger-ul a {
+  color: #d8d9db;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .hamburger-ul li:hover {
   background-color: white;
@@ -197,4 +208,80 @@ a {
 
 .hide {
   display: none;
+}
+
+.notification-menu {
+  background-color: #e23b38;
+  color: white;
+  width: 296px;
+  height: 367px;
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-heading h3 {
+  font-size: 14.5px;
+  font-weight: 300;
+}
+
+#email,
+#user,
+.button {
+  width: 100%;
+  height: 38px;
+  border: black solid 2px;
+  background-color: #e23b38;
+  color: black;
+  padding: 0 6px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+::placeholder {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.agreement {
+  font-size: 11.5px;
+  color: #292929;
+}
+
+.button {
+  background-color: black;
+  color: white;
+}
+.text-wrapper {
+  flex-grow: 1;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.notification-heading {
+  flex-grow: 1;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: space-between;
+  gap: 10px;
+  text-wrap: wrap;
 }
