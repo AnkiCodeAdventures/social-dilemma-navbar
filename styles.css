@@ -403,9 +403,45 @@ select:focus-visible {
   position: fixed;
   top: calc(93.58px - 100vh);
   z-index: -2;
-  transition: 0.4s;
+  transition: top 0.4s;
 }
 
 .active {
   top: 93.58px !important;
+}
+
+.offscreen-menu ul {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.offscreen-menu ul a {
+  display: block;
+  padding: 0 0 0 50px;
+}
+
+.offscreen-menu ul a:hover {
+  color: #cecdcd;
+}
+
+.offscreen-menu .second-list {
+  font-size: 15.5px;
+  color: #cecdcd;
+  padding-top: 21px;
+  gap: 0;
+}
+
+.offscreen-menu .second-list a {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.offscreen-menu .second-list a:hover {
+  background-color: #fffafa;
 }
