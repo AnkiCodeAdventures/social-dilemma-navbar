@@ -13,6 +13,13 @@ html {
   padding: 0;
 }
 
+/* Remove default styles for :-webkit-any-link */
+:-webkit-any-link {
+  color: inherit; /* Inherit the color from its parent */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Optionally change cursor to pointer */
+}
+
 /* navigation bar styles */
 
 nav {
@@ -69,7 +76,7 @@ img {
 }
 
 .notification .fa-bell {
-  color: rgb(3, 30, 163);
+  color: #292929;
   font-size: 20px;
   animation-name: ring;
   animation-duration: 4s;
@@ -116,7 +123,7 @@ img {
 .one-notification {
   height: 15px;
   width: 15px;
-  color: white;
+  color: white !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,7 +223,7 @@ a:hover {
   justify-content: flex-end;
 }
 .hamburger-ul li:hover {
-  background-color: white;
+  background-color: white !important;
 }
 
 .hide {
@@ -293,7 +300,7 @@ select:focus-visible {
 
 .button {
   background-color: black;
-  color: white;
+  color: white !important;
 }
 .text-wrapper {
   flex-grow: 1;
@@ -432,7 +439,7 @@ select:focus-visible {
 
 .offscreen-menu .second-list {
   font-size: 15.5px;
-  color: #cecdcd;
+  color: #cecdcd !important;
   padding-top: 21px;
   gap: 0;
 }
@@ -444,4 +451,45 @@ select:focus-visible {
 
 .offscreen-menu .second-list a:hover {
   background-color: #fffafa;
+}
+
+.third-list {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  min-height: 195px;
+  justify-content: center;
+  text-align: center;
+}
+
+.third-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.red {
+  color: #e33b38 !important;
+}
+
+.fa-brands {
+  font-size: 18px;
+  color: #cecdcd;
+  padding: 7px;
+}
+
+.third-list ul a {
+  padding: 0;
+  font-size: 18px;
+}
+
+.third-list ul a:hover {
+  background-color: white;
+  border-radius: 40px;
 }
